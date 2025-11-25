@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // [https://vitejs.dev/config/](https://vitejs.dev/config/)
 export default defineConfig({
   plugins: [react()],
-  base: 'lokeshpatel.space', // This must match your repo name
+  base: '/', // Changed from '/lokeshpatel.space/'
 })
