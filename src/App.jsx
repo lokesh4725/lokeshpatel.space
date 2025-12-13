@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Database, 
-  Cloud, 
-  Code, 
-  Server, 
-  Award, 
-  Briefcase, 
-  GraduationCap, 
-  Mail, 
-  Linkedin, 
-  Phone, 
-  MapPin, 
-  ChevronDown, 
+import {
+  Database,
+  Cloud,
+  Code,
+  Server,
+  Award,
+  Briefcase,
+  GraduationCap,
+  Mail,
+  Linkedin,
+  Phone,
+  MapPin,
+  ChevronDown,
   ExternalLink,
   Terminal,
   Cpu,
@@ -28,7 +28,7 @@ const Portfolio = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      
+
       // Update active section based on scroll position
       const sections = ['home', 'about', 'skills', 'experience', 'certifications', 'contact'];
       const current = sections.find(section => {
@@ -57,9 +57,8 @@ const Portfolio = () => {
   const NavLink = ({ to, label, mobile = false }) => (
     <button
       onClick={() => scrollTo(to)}
-      className={`text-sm font-medium transition-colors hover:text-blue-400 ${
-        activeSection === to ? 'text-blue-400' : 'text-slate-300'
-      } ${mobile ? 'block w-full text-left py-4 text-lg border-b border-slate-800' : ''}`}
+      className={`text-sm font-medium transition-colors hover:text-blue-400 ${activeSection === to ? 'text-blue-400' : 'text-slate-300'
+        } ${mobile ? 'block w-full text-left py-4 text-lg border-b border-slate-800' : ''}`}
     >
       {label}
     </button>
@@ -71,9 +70,9 @@ const Portfolio = () => {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/95 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-            LOKESH PATEL.
+            LP.
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
             <NavLink to="home" label="Home" />
@@ -104,8 +103,8 @@ const Portfolio = () => {
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center pt-20 relative overflow-hidden">
         {/* Background Grid Decoration */}
-        <div className="absolute inset-0 z-0 opacity-10" 
-             style={{ backgroundImage: 'radial-gradient(#3b82f6 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
+        <div className="absolute inset-0 z-0 opacity-10"
+          style={{ backgroundImage: 'radial-gradient(#3b82f6 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
         </div>
 
         <div className="max-w-6xl mx-auto px-6 relative z-10 w-full">
@@ -122,11 +121,11 @@ const Portfolio = () => {
                 </span>
               </h1>
               <p className="text-xl text-slate-400 max-w-xl leading-relaxed">
-                Designing scalable, enterprise-grade data solutions. 
-                Specializing in Cloud Architecture (AWS), Modern Data Warehousing, 
+                Designing scalable, enterprise-grade data solutions.
+                Specializing in Cloud Architecture (AWS), Modern Data Warehousing,
                 and ETL Transformations for Fortune 500 clients.
               </p>
-              
+
               <div className="flex flex-wrap gap-4 pt-4">
                 <button onClick={() => scrollTo('contact')} className="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium transition-all shadow-lg shadow-blue-500/25">
                   Contact Me
@@ -178,7 +177,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-slate-500">
             <ChevronDown size={24} />
           </div>
@@ -190,7 +189,7 @@ const Portfolio = () => {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">About Me</h2>
           <p className="text-lg text-slate-300 leading-relaxed">
-            I am a results-driven <span className="text-blue-400 font-semibold">Data Architect</span> with over a decade of progressive experience in designing and optimizing enterprise-scale data engineering and integration solutions. 
+            I am a results-driven <span className="text-blue-400 font-semibold">Data Architect</span> with over a decade of progressive experience in designing and optimizing enterprise-scale data engineering and integration solutions.
             My expertise lies in translating complex business requirements into scalable, performant architectures using modern cloud stacks and legacy systems alike.
             I have successfully led data modernization, automation, and multi-million-dollar transformation projects across Fortune 500 clients in Healthcare, Retail, and Finance.
           </p>
@@ -201,7 +200,7 @@ const Portfolio = () => {
       <section id="skills" className="py-24 bg-slate-800/50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-white">Technical Expertise</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Skill Card 1 */}
             <div className="bg-slate-800 p-8 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all hover:-translate-y-1 shadow-lg group">
@@ -258,7 +257,7 @@ const Portfolio = () => {
                 <li className="flex items-center"><span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></span>Bitbucket & Agile Methodology</li>
               </ul>
             </div>
-            
+
             {/* Awards Card */}
             <div className="md:col-span-2 bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-xl border border-slate-700 shadow-lg">
               <div className="flex items-center gap-4 mb-6">
@@ -294,7 +293,7 @@ const Portfolio = () => {
       <section id="experience" className="py-24 bg-slate-900 relative">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-white">Professional Journey</h2>
-          
+
           <div className="space-y-12">
 
             {/* Job 1 – Carelon Global Solutions */}
@@ -304,7 +303,7 @@ const Portfolio = () => {
                 <div className="absolute top-0 bottom-[-48px] left-[-2px] md:left-0 w-0.5 bg-slate-700"></div>
                 {/* Timeline Dot */}
                 <div className="absolute top-0 left-[-9px] md:left-[-7px] w-4 h-4 rounded-full bg-blue-500 border-4 border-slate-900"></div>
-                
+
                 <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-sm">
                   <div className="flex justify-between items-start flex-wrap gap-2 mb-2">
                     <h3 className="text-xl font-bold text-white">Carelon Global Solutions</h3>
@@ -417,7 +416,7 @@ const Portfolio = () => {
                 <div className="absolute top-0 bottom-0 left-[-2px] md:left-0 w-0.5 bg-slate-700"></div>
                 {/* Timeline Dot */}
                 <div className="absolute top-0 left-[-9px] md:left-[-7px] w-4 h-4 rounded-full bg-purple-500 border-4 border-slate-900"></div>
-                
+
                 <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-sm">
                   <div className="flex justify-between items-start flex-wrap gap-2 mb-2">
                     <h3 className="text-xl font-bold text-white">Hewlett Packard Enterprise</h3>
@@ -468,7 +467,7 @@ const Portfolio = () => {
       <section id="certifications" className="py-24 bg-slate-800/50">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-12">
-            
+
             {/* Certs List */}
             <div className="flex-1">
               <h2 className="text-3xl font-bold mb-8 text-white flex items-center gap-3">
@@ -477,7 +476,7 @@ const Portfolio = () => {
               <div className="space-y-4">
                 {[
                   "Snowflake Platform Associate",
-				  "Databricks Generative AI Fundamentals",
+                  "Databricks Generative AI Fundamentals",
                   "Google Cloud Digital Leader Specialization",
                   "Teradata Certified Professional & Technical Expert",
                   "CURES Enterprise Problem Solving Framework (White Belt)"
@@ -518,14 +517,14 @@ const Portfolio = () => {
           </p>
 
           <div className="flex flex-col md:flex-row justify-center gap-6">
-            <a href="mailto:lokesh4725@gmail.com" 
-               className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-blue-500/50 text-white rounded-xl transition-all group">
+            <a href="mailto:lokesh4725@gmail.com"
+              className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-blue-500/50 text-white rounded-xl transition-all group">
               <Mail className="group-hover:text-blue-400 transition-colors" />
               <span>lokesh4725@gmail.com</span>
             </a>
-            
+
             <a href="https://linkedin.com/in/lokesh-patel4725" target="_blank" rel="noopener noreferrer"
-               className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-blue-500/50 text-white rounded-xl transition-all group">
+              className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-blue-500/50 text-white rounded-xl transition-all group">
               <Linkedin className="group-hover:text-blue-400 transition-colors" />
               <span>LinkedIn Profile</span>
             </a>
