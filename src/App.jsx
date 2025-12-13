@@ -9,7 +9,7 @@ import {
   GraduationCap,
   Mail,
   Linkedin,
-  Phone,
+  Twitter,
   MapPin,
   ChevronDown,
   ExternalLink,
@@ -530,10 +530,11 @@ const Portfolio = () => {
               <span>LinkedIn Profile</span>
             </a>
 
-            <div className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 border border-slate-700 text-white rounded-xl cursor-default">
-              <Phone className="text-slate-500" />
-              <span>+91 9XXXXXXXXX</span>
-            </div>
+            <a href="https://x.com/lokeshptl" target="_blank" rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-blue-500/50 text-white rounded-xl transition-all group">
+              <Twitter className="group-hover:text-blue-400 transition-colors" />
+              <span>Twitter Profile</span>
+            </a>
           </div>
 
           <footer className="mt-20 pt-8 border-t border-slate-800 text-slate-500 text-sm">
