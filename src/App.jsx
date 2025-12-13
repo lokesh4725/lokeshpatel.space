@@ -223,6 +223,7 @@ const Portfolio = () => {
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Cloud & Platforms</h3>
               <ul className="space-y-2 text-slate-400">
+                <li className="flex items-center"><span className="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-2"></span>Snowflake Platform</li>
                 <li className="flex items-center"><span className="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-2"></span>AWS (S3, Redshift, Glue, EC2)</li>
                 <li className="flex items-center"><span className="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-2"></span>Google Cloud Platform (GCP)</li>
                 <li className="flex items-center"><span className="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-2"></span>Databricks</li>
