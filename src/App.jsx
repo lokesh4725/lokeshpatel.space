@@ -410,7 +410,7 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Job 3 – Hewlett Packard Global Soft Pvt Ltd */}
+            {/* Job 3 – Hewlett Packard Enterprise */}
             <div className="relative pl-8 md:pl-0">
               <div className="md:w-1/2 md:ml-auto pl-0 md:pl-12 relative">
                 {/* Timeline Line */}
@@ -420,7 +420,7 @@ const Portfolio = () => {
                 
                 <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-sm">
                   <div className="flex justify-between items-start flex-wrap gap-2 mb-2">
-                    <h3 className="text-xl font-bold text-white">Hewlett Packard Global Soft Pvt Ltd</h3>
+                    <h3 className="text-xl font-bold text-white">Hewlett Packard Enterprise</h3>
                     <span className="text-sm px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full font-medium">
                       Oct 2012 - Dec 2015
                     </span>
