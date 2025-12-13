@@ -476,7 +476,8 @@ const Portfolio = () => {
               </h2>
               <div className="space-y-4">
                 {[
-                  "Databricks Generative AI Fundamentals",
+                  "Snowflake Platform Associate",
+				  "Databricks Generative AI Fundamentals",
                   "Google Cloud Digital Leader Specialization",
                   "Teradata Certified Professional & Technical Expert",
                   "CURES Enterprise Problem Solving Framework (White Belt)"
@@ -531,7 +532,7 @@ const Portfolio = () => {
 
             <div className="flex items-center justify-center gap-3 px-8 py-4 bg-slate-800 border border-slate-700 text-white rounded-xl cursor-default">
               <Phone className="text-slate-500" />
-              <span>+91 9632102347</span>
+              <span>+91 9XXXXXXXXX</span>
             </div>
           </div>
 
